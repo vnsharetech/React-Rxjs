@@ -1,13 +1,7 @@
+import "./App.css";
 
-import './App.css';
-
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-import Home from "./components/Home"
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Home from "./components/Home";
 
 function App() {
   return (
@@ -18,9 +12,9 @@ function App() {
             <li>
               <Link to="/">Home</Link>
             </li>
-            
           </ul>
         </nav>
+        Hi there!
         <Switch>
           <Route path="/">
             <Home />
